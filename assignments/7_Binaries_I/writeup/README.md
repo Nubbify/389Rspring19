@@ -1,12 +1,12 @@
 # Writeup 7 - Binaries I
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Oscar Bautista
+Section: Oscar Bautista
 
 I pledge on my honor that I have not given or received any unauthorized
 assistance on this assignment or examination.
 
-Digital acknowledgement: *PUT YOUR NAME HERE*
+Digital acknowledgement: Oscar Bautista
 
 ## Assignment Writeup
 
@@ -14,9 +14,27 @@ Digital acknowledgement: *PUT YOUR NAME HERE*
 
 *Put your code here as well as in main.c*
 ```c
-printf("your code here");
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+  uint32_t a = 0x1ceb00da;
+  uint32_t b = 0xfeedface;
+
+  printf("a = %d\n", a);
+  printf("b = %d\n", b);
+
+  b = a ^ b;
+  a = b ^ a;
+  b = a ^ b;
+
+  printf("a = %d\n", a);
+  printf("b = %d\n", b);
+
+  return 0;
+}
 ```
 
 ### Part 2 (10 Pts)
 
-*Replace this text with your repsonse to our prompt for part 2!*
+The program defines two 4 byte variables and then uses three bitwise xors in order to swap the values of the two variables. It shows this by printing the values before and after the bitwise xors.
