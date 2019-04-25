@@ -1,12 +1,12 @@
 # Extra Credit Writeup - Binaries II
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Oscar Bautista
+Section: 0101
 
 I pledge on my honor that I have not given or received any unauthorized
 assistance on this assignment or examination.
 
-Digital acknowledgement: *PUT YOUR NAME HERE*
+Digital acknowledgement: Oscar Bautista
 
 ## Assignment Writeup
 
@@ -88,24 +88,43 @@ The notes I wrote while doing this are as follows and copied straight from the n
 >CMSC389R-{0n3_st0p_l0cK_sh0P}
 >
 >Locations 0x0 to 0xb are just "CMSC389R-{0n"
+>
 >**Location 0xc is "3" or 0x33 in ascii.
+>
 >Locations 0xd and 0xe are just "_s"
+>
 >Location 0xf i "t" is a result of needing to be one apart from the character in 0xe (0xf - 0xe == 1)
+>
 >Location 0x10 is "0" as it's the same as the character in location 0xa
+>
 >Location 0x11 is the 0 (48 in ascii) at 0x10 + 64 (0x40) for 112(0x70) in ascii, which is "p"
+>
 >Location 0x12 is the same as location 0xd so "_"
+>
 >Location 0x13 is "l"
+>
 >Location 0x14 is teh same as 0x10 so "0"
+>
 >Location 0x15 is the same as 0x13 - 9, so 108 - 9 = 99 so "c" in ascii
+>
 >Location 0x16 is "K"
+>
 >Location 0x17 is the same as 0xd which is "_"
+>
 >Location 0x18 is "s"
+>
 >Location 0x19 is 0x13 - 4 which is 108 - 4 for 104 which is h
+>
 >Location 0x1a is the same as 0x14 so "0"
+>
 >**Location 0x1b is a bitwise and with 0x7fffffffU and it will produce 0x50 (01010000) 
+>
 >	Bitwise and of 0111 1111 1111 1111 1111 1111 1111 1111 
->		and of 0000 0000 0000 0000 0000 0000 0101 0000
->		basically just 0x50, whoops
+>
+> and of 0000 0000 0000 0000 0000 0000 0101 0000
+>
+>	basically just 0x50, whoops
+>
 >Location 0x1c is "}"
 
 The stars denote disassembled instructions that I had trouble wrapping my head around at first. 
